@@ -2,18 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% load staticfiles %}
     <title>Title</title>
 </head>
+<style>
+input, select {
+    width: 80%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    width: 80%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 200px 0 200px;
+}
+
+label {
+    margin-right: 100%;
+}
+
+</style>
 <body>
 <form method="post">
+    <img src="{% static "logo.png" %}">
+    <div style="background-color: #f2f2f2; text-align: center;">
+        FORM
+    </div>
     {% csrf_token %}
     {% for field in form %}
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
             <span class="text-danger small">{{ field.errors }}</span>
         </div>
-        <label class="control-label col-sm-2">{{ field.label_tag }}</label>
-        <div class="col-sm-10">{{ field }}</div>
+        
+        <div class="col-sm-10">
+            <label class="control-label col-sm-2">{{ field.label_tag }}</label>
+            {{ field }}
+        </div>
     </div>
     {%  endfor %}
     <div class="form-group">
