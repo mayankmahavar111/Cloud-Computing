@@ -24,7 +24,7 @@ VMMigrations=(
 
 
 class GeneralForm(forms.Form):
-    key = forms.IntegerField(required=True , label='Key' , min_value=0)
+    #key = forms.IntegerField(required=True , label='Key' , min_value=0)
     AllocationPolicy = forms.ChoiceField(required=True , label='AllocationPolicy', choices=AllocationPolicy)
     os = forms.ChoiceField(required=True, label='OS' , choices=OS)
     Hypervisor = forms.CharField(required=True,label='Hypervisor')
@@ -37,7 +37,7 @@ class GeneralForm(forms.Form):
     class Meta:
         model = General
         fields=(
-            'key',
+     #       'key',
             'AllocationPolicy',
             'os',
             'Hypervisor',
@@ -56,7 +56,7 @@ MPS=(
 
 
 class HostForm(forms.Form):
-    key = forms.IntegerField(required=True, label='Key', min_value=0)
+    #key = forms.IntegerField(required=True, label='Key', min_value=0)
     amount = forms.IntegerField(required=True, label='amount', min_value=0)
     ram = forms.FloatField(required=True, label='Ram', min_value=0)
     Bandwidth = forms.FloatField(required=True, label='Bandwidth', min_value=0)
@@ -69,7 +69,7 @@ class HostForm(forms.Form):
     class Meta :
         model = Hosts
         fields=(
-            'key',
+      #      'key',
             'amount',
             'ram',
             'Bandwidth',
@@ -82,7 +82,7 @@ class HostForm(forms.Form):
 
 
 class CostForm(forms.Form):
-    key = forms.IntegerField(required=True, label='Key', min_value=0)
+    #key = forms.IntegerField(required=True, label='Key', min_value=0)
     ProcessingCost = forms.FloatField(required=True, label='Processing Cost', min_value=0)
     MemoryCost = forms.FloatField(required=True, label='Mempory Cost', min_value=0)
     StorageCost = forms.FloatField(required=True, label='Storage Cost', min_value=0)
@@ -91,7 +91,7 @@ class CostForm(forms.Form):
     class Meta :
         model = Costs
         fields=(
-            'key',
+     #       'key',
             'ProcessingCost',
             'MemoryCost',
             'StorageCost',
