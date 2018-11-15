@@ -4,5 +4,7 @@ from tutorial.cloud import views
 
 urlpatterns = [
     url('General/$', views.General),
+    url('Host/$', views.host),
+    url('Cost/$', views.cost),
 
 ]
