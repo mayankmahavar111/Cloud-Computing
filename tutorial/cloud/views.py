@@ -117,3 +117,9 @@ def ask(request):
         pass
     else:
         return render(request,'ask.html')
+
+def schedule(request):
+    if request.method =='POST':
+        pass
+    else:
+        return render(request,'schedule.html')
