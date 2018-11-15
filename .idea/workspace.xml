@@ -19,8 +19,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutorial/cloud/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="28" column="55" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="28" selection-end-column="55" />
+            <state relative-caret-position="396">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -28,25 +28,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tutorial/cloud/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+            <state relative-caret-position="464">
+              <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tutorial/cloud/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="60" column="21636" lean-forward="false" selection-start-line="60" selection-start-column="21636" selection-end-line="60" selection-end-column="21636" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,6 +72,18 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tutorial/cloud/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="97" column="27" lean-forward="false" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -112,10 +112,10 @@
         <option value="$PROJECT_DIR$/tutorial/cloud/urls.py" />
         <option value="$PROJECT_DIR$/tutorial/cloud/form.py" />
         <option value="$PROJECT_DIR$/tutorial/cloud/html/general.html" />
-        <option value="$PROJECT_DIR$/tutorial/cloud/views.py" />
         <option value="$PROJECT_DIR$/tutorial/settings.py" />
         <option value="$PROJECT_DIR$/tutorial/cloud/models.py" />
         <option value="$PROJECT_DIR$/tutorial/cloud/forms.py" />
+        <option value="$PROJECT_DIR$/tutorial/cloud/views.py" />
       </list>
     </option>
   </component>
@@ -655,16 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tutorial/cloud/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tutorial/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
@@ -675,8 +665,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial/cloud/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="28" column="55" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="28" selection-end-column="55" />
+        <state relative-caret-position="396">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
@@ -685,10 +675,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutorial/cloud/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="60" column="21636" lean-forward="false" selection-start-line="60" selection-start-column="21636" selection-end-line="60" selection-end-column="21636" />
+        <state relative-caret-position="396">
+          <caret line="97" column="27" lean-forward="false" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutorial/cloud/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
           </folding>
         </state>
       </provider>

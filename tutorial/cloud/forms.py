@@ -64,7 +64,7 @@ class HostForm(forms.Form):
     MaxPower = forms.IntegerField(required=True, label='MaxPower', min_value=0)
     StaticPower = forms.IntegerField(required=True, label='StaticPower', min_value=0)
     ProcessingElement = forms.IntegerField(required=True, label='Processing Element', min_value=0)
-    MPS = forms.CharField(required=True, label='MPS')
+    MPS = forms.ChoiceField(required=True, label='MPS', choices=MPS)
 
     class Meta :
         model = Hosts
@@ -78,6 +78,24 @@ class HostForm(forms.Form):
             'StaticPower',
             'ProcessingElement',
             'MPS'
+        )
+
+
+class CostForm(forms.Form):
+    key = forms.IntegerField(required=True, label='Key', min_value=0)
+    ProcessingCost = forms.FloatField(required=True, label='Processing Cost', min_value=0)
+    MemoryCost = forms.FloatField(required=True, label='Mempory Cost', min_value=0)
+    StorageCost = forms.FloatField(required=True, label='Storage Cost', min_value=0)
+    BandwidthCost = forms.FloatField(required=True, label='Bandwidth Cost', min_value=0)
+
+    class Meta :
+        model = Costs
+        fields=(
+            'key',
+            'ProcessingCost',
+            'MemoryCost',
+            'StorageCost',
+            'BandwidthCost'
         )
 
 
