@@ -7,5 +7,5 @@ urlpatterns = [
     url('Host/$', views.host),
     url('Cost/$', views.cost),
     url('ask/$', views.ask),
-
+    url('schedule/$', views.schedule),
 ]
