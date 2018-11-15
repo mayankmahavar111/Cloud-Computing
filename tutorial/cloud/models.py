@@ -18,7 +18,7 @@ class General(models.Model):
         ordering = ('key',)
 
 class Hosts(models.Model):
-    key = models.ForeignKey(General,on_delete=models.CASCADE)
+    key = models.IntegerField()
     amount = models.IntegerField()
     ram = models.FloatField()
     Bandwidth = models.FloatField()
@@ -32,7 +32,7 @@ class Hosts(models.Model):
         ordering = ('key' ,)
 
 class Costs(models.Model) :
-    key =models.ForeignKey(General,on_delete=models.CASCADE)
+    key =models.IntegerField()
     ProcessingCost =  models.FloatField()
     MemoryCost =models.FloatField()
     StorageCost  = models.FloatField()
